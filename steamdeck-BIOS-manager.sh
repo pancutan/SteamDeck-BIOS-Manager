@@ -496,7 +496,7 @@ then
   		curl -s https://api.github.com/repos/ShadeTechnik/DeckSight-Public/releases/latest | \
 			grep "browser_download_url" | cut -d "\"" -f4 | wget --quiet --no-clobber --input-file -
 
-  		tar -xvf DeckSight.tar.gz -C $(pwd)/BIOS --strip-components=1 bios/F*.fd
+  		tar -xvf DeckSight.tar.gz -C $(pwd)/BIOS --strip-components=1 --wildcards bios/F*.fd
   		
 		echo Steam Deck LCD - Jupiter BIOS download complete!
 	
