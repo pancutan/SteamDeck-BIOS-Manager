@@ -78,7 +78,7 @@ then
 else
 	zenity --warning --title "Steam Deck BIOS Manager" --text \
 		"The script can't determine if its an OLED or LCD.\n\nPlease file a bug report on the Github repo!" --width 400 --height 75
-	exit
+	# exit
 fi
 
 while true
@@ -345,45 +345,55 @@ then
 	if [ $MODEL = "Jupiter" ]
 	then
 		echo Downloading Steam Deck LCD - Jupiter BIOS files. Please wait.
-		echo downloading Steam Deck LCD - Jupiter BIOS F7A0110
-		curl -s -O --output-dir "$(pwd)/BIOS/" -L \
-			https://gitlab.com/evlaV/jupiter-hw-support/-/raw/0660b2a5a9df3bd97751fe79c55859e3b77aec7d/usr/share/jupiter_bios/F7A0110_sign.fd
+		echo "Ignoring BIOS F7A0110, because md5 will fail"
+		# echo downloading Steam Deck LCD - Jupiter BIOS F7A0110
+		# curl -s -O --output-dir "$(pwd)/BIOS/" -L \
+		#   https://gitlab.com/evlaV/jupiter-hw-support/-/raw/0660b2a5a9df3bd97751fe79c55859e3b77aec7d/usr/share/jupiter_bios/F7A0110_sign.fd
 
-		echo downloading Steam Deck LCD - Jupiter BIOS F7A0113
-		curl -s -O --output-dir "$(pwd)/BIOS/" -L \
-			https://gitlab.com/evlaV/jupiter-hw-support/-/raw/bf77354719c7a74097a23bed4fb889df4045aec4/usr/share/jupiter_bios/F7A0113_sign.fd
+		echo "Ignoring BIOS F7A0113, because md5 will fail"
+		# echo downloading Steam Deck LCD - Jupiter BIOS F7A0113
+		# curl -s -O --output-dir "$(pwd)/BIOS/" -L \
+		#   https://gitlab.com/evlaV/jupiter-hw-support/-/raw/bf77354719c7a74097a23bed4fb889df4045aec4/usr/share/jupiter_bios/F7A0113_sign.fd
 
-		echo downloading Steam Deck LCD - Jupiter BIOS F7A0115
-		curl -s -O --output-dir "$(pwd)/BIOS/" -L \
-			https://gitlab.com/evlaV/jupiter-hw-support/-/raw/5644a5692db16b429b09e48e278b484a2d1d4602/usr/share/jupiter_bios/F7A0115_sign.fd
+		echo "Ignoring BIOS F7A0115, because md5 will fail"
+		# echo downloading Steam Deck LCD - Jupiter BIOS F7A0115
+		# curl -s -O --output-dir "$(pwd)/BIOS/" -L \
+		# 	https://gitlab.com/evlaV/jupiter-hw-support/-/raw/5644a5692db16b429b09e48e278b484a2d1d4602/usr/share/jupiter_bios/F7A0115_sign.fd
 
-		echo downloading Steam Deck LCD - Jupiter BIOS F7A0116
-		curl -s -O --output-dir "$(pwd)/BIOS/" -L \
-			https://gitlab.com/evlaV/jupiter-hw-support/-/raw/38f7bdc2676421ee11104926609b4cc7a4dbc6a3/usr/share/jupiter_bios/F7A0116_sign.fd
+		echo "Ignoring BIOS F7A0116, because md5 will fail"
+		# echo downloading Steam Deck LCD - Jupiter BIOS F7A0116
+		# curl -s -O --output-dir "$(pwd)/BIOS/" -L \
+		# 	https://gitlab.com/evlaV/jupiter-hw-support/-/raw/38f7bdc2676421ee11104926609b4cc7a4dbc6a3/usr/share/jupiter_bios/F7A0116_sign.fd
+		#
+		echo "Ignoring BIOS F7A0118, because md5 will fail"
+		# echo downloading Steam Deck LCD - Jupiter BIOS F7A0118
+		# curl -s -O --output-dir "$(pwd)/BIOS/" -L \
+		# 	https://gitlab.com/evlaV/jupiter-hw-support/-/raw/f79ccd15f68e915cc02537854c3b37f1a04be9c3/usr/share/jupiter_bios/F7A0118_sign.fd
+		#
+		echo "Ignoring BIOS F7A0119, because md5 will fail"
+		# echo downloading Steam Deck LCD - Jupiter BIOS F7A0119
+		# curl -s -O --output-dir "$(pwd)/BIOS/" -L \
+		# 	https://gitlab.com/evlaV/jupiter-hw-support/-/raw/bc5ca4c3fc739d09e766a623efd3d98fac308b3e/usr/share/jupiter_bios/F7A0119_sign.fd
+		#
+		echo "Ignoring BIOS F7A0120, because md5 will fail"
+		# echo downloading Steam Deck LCD - Jupiter BIOS F7A0120
+		# curl -s -O --output-dir "$(pwd)/BIOS/" -L \
+		# 	https://gitlab.com/evlaV/jupiter-hw-support/-/raw/a43e38819ba20f363bdb5bedcf3f15b75bf79323/usr/share/jupiter_bios/F7A0120_sign.fd
+		#
+		echo "Ignoring BIOS F7A0121, because md5 will fail"
+		# echo downloading Steam Deck LCD - Jupiter BIOS F7A0121
+		# curl -s -O --output-dir "$(pwd)/BIOS/" -L \
+		# 	https://gitlab.com/evlaV/jupiter-hw-support/-/raw/7ffc22a4dc083c005e26676d276bdbd90dd1de5e/usr/share/jupiter_bios/F7A0121_sign.fd
+		#
+		echo "Ignoring BIOS F7A0131, because md5 will fail"
+		# echo downloading Steam Deck LCD - Jupiter BIOS F7A0131
+		# curl -s -O --output-dir "$(pwd)/BIOS/" -L \
+		# 	https://gitlab.com/evlaV/jupiter-hw-support/-/raw/eb91bebf4c2e5229db071720250d80286368e4e2/usr/share/jupiter_bios/F7A0131_sign.fd
 
-		echo downloading Steam Deck LCD - Jupiter BIOS F7A0118
-		curl -s -O --output-dir "$(pwd)/BIOS/" -L \
-			https://gitlab.com/evlaV/jupiter-hw-support/-/raw/f79ccd15f68e915cc02537854c3b37f1a04be9c3/usr/share/jupiter_bios/F7A0118_sign.fd
-
-		echo downloading Steam Deck LCD - Jupiter BIOS F7A0119
-		curl -s -O --output-dir "$(pwd)/BIOS/" -L \
-			https://gitlab.com/evlaV/jupiter-hw-support/-/raw/bc5ca4c3fc739d09e766a623efd3d98fac308b3e/usr/share/jupiter_bios/F7A0119_sign.fd
-
-		echo downloading Steam Deck LCD - Jupiter BIOS F7A0120
-		curl -s -O --output-dir "$(pwd)/BIOS/" -L \
-			https://gitlab.com/evlaV/jupiter-hw-support/-/raw/a43e38819ba20f363bdb5bedcf3f15b75bf79323/usr/share/jupiter_bios/F7A0120_sign.fd
-
-		echo downloading Steam Deck LCD - Jupiter BIOS F7A0121
-		curl -s -O --output-dir "$(pwd)/BIOS/" -L \
-			https://gitlab.com/evlaV/jupiter-hw-support/-/raw/7ffc22a4dc083c005e26676d276bdbd90dd1de5e/usr/share/jupiter_bios/F7A0121_sign.fd
-
-		echo downloading Steam Deck LCD - Jupiter BIOS F7A0131
-		curl -s -O --output-dir "$(pwd)/BIOS/" -L \
-			https://gitlab.com/evlaV/jupiter-hw-support/-/raw/eb91bebf4c2e5229db071720250d80286368e4e2/usr/share/jupiter_bios/F7A0131_sign.fd
-
-		echo downloading Steam Deck LCD - Jupiter BIOS F7A0133
-		curl -s -O --output-dir "$(pwd)/BIOS/" -L \
-			https://gitlab.com/evlaV/jupiter-hw-support/-/raw/5c14655a762870754f9d8574682b6727cb640904/usr/share/jupiter_bios/F7A0133_sign.fd
+		echo "Ignoring BIOS F7A0133, because md5 will fail"
+		# echo downloading Steam Deck LCD - Jupiter BIOS F7A0133
+		# curl -s -O --output-dir "$(pwd)/BIOS/" -L \
+		# https://gitlab.com/evlaV/jupiter-hw-support/-/raw/5c14655a762870754f9d8574682b6727cb640904/usr/share/jupiter_bios/F7A0133_sign.fd
 
 		echo downloading Steam Deck LCD - Jupiter BIOS F7A0110_DeckHD
 		curl -s -O --output-dir "$(pwd)/BIOS/" -L \
@@ -529,8 +539,14 @@ then
 	fi
 
 	# verify the BIOS md5 hash is good
+
+  # This one that I don't own, fails always
+  echo Ignoring F7A0133_DeckSight_signed_r04.fd
+  rm "$(pwd)"/BIOS/F7A0133_DeckSight_signed_r04.fd -f
+
+  echo "Checking... will write in ./failing.txt if I found other BIOS that you should fix or look here to comment and avoid process"
 	for BIOS_FD in "$(pwd)"/BIOS/*.fd
-	do 
+	do
 		grep "$(md5sum "$BIOS_FD" | cut -d " " -f 1)" "$(pwd)/md5.txt" &> /dev/null
 		if [ $? -eq 0 ]
 		then
@@ -540,6 +556,7 @@ then
 			echo md5 hash check failed! This could be due to corrupted downloads.
 			echo Perform the DOWNLOAD operation again!
 			rm "$(pwd)"/BIOS/*.fd
+      echo "Failing $BIOS_FD" >> failing.txt
 		fi
 	done
 
